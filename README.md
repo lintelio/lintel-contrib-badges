@@ -22,61 +22,71 @@ Once the module has been installed, you will have to load it in your main SASS f
 @import "bower_components/lintel-contrib-badges/sass/badges.scss"
 ```
 
-
-
 You can use [wiredep](https://github.com/taptapship/wiredep) or [grunt-wiredep](https://github.com/stephenplusplus/grunt-wiredep) to automatically inject files in your build process.
 
 
 ## Variables
 Check the vars file in the `sass` folder to see the full list of variables you can customize.
 
-#### $bacon-bg
-Default value: `#4b77be`  
+#### $badge-padding-y
+Default value: `4px`  
 
-Change the bacon background.
+Badge padding-top and padding-bottom.
 
-#### $bacon-border
-Default value: `#f00`  
+#### $badge-padding-y
+Default value: `4px`  
 
-Change the bacon border color.
+Badge padding-top and padding-bottom.
 
-#### $bacon-text
-Default value: `#fff`  
+#### $badge-padding-x
+Default value: `8px`  
 
-Change the bacon text color.
+Badge padding-left and padding-right.
+
+#### $badge-border-radius
+Default value: `$border-radius-sm`  
+
+Badge border-radius.
 
 
 ## Mixins
 Check the mixins file in the `sass` folder to see how you can extend this module.
 
-#### make-bacon($bg, $border, $text)
-Default $bg: `$bacon-bg`  
-Default $border: `$bacon-border`  
-Default $text: `$bacon-text`  
-
-Sets the background, border, and text color of an element.
+#### make-badge($bg, [$border, $text, $bg-inverse, $border-inverse, $text-inverse])
+Sets the background, border, and text color of a badge. Only include `$*-inverse` parameters if `$badge-include-inverse` is `true`.
 
 ```scss
-.bacon-primary {
-  @include make-bacon(#fff, #f00, #000);
+.badge-primary {
+  @include make-badge(
+    $bg: $badge-primary, 
+    $bg-inverse: $badge-primary-bg,
+    $border-inverse: $badge-primary-border, 
+    $text-inverse: $badge-primary-text
+  );
 }
 ```
 
 
 ## Examples
 
-#### Bacon
+#### Base
 ```html
-<div class="bacon">
-  Hello world!
-</div>
+<span class="badge">Default</span>
 ```
 
-#### Primary Bacon
+#### Primary Badge
 ```html
-<div class="bacon bacon-primary">
-  Hello world!
-</div>
+<span class="badge">Primary</span>
+```
+
+#### Round Badge
+```html
+<h1>CSS makes the world go <span class="badge badge-round">round</span></h1>
+```
+
+#### Inside Headings
+```html
+<h1>This is a big, bad <span class="badge">badge</span></h1>
 ```
 
 

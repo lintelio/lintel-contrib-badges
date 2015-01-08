@@ -8,44 +8,56 @@
 
 // Base
 // ----
-.bacon {
-  background-color: $bacon-base-bg;
-  border: 1px solid $bacon-base-border;
-  border-radius: $bacon-border-radius;
-  color: $bacon-base-text;
-  padding: $bacon-padding-y $bacon-padding-x;
-  margin-bottom: $bacon-margin-y;
+.badge {
+  background-color: $badge-base-bg;
+  border: 1px solid $badge-base-border;
+  border-radius: $badge-border-radius;
+  color: $badge-base-text;
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: $badge-padding-y $badge-padding-x;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+// Round
+.badge-round {
+  border-radius: 1000px;
+  padding-left: $badge-padding-x-lg;
+  padding-right: $badge-padding-x-lg;
 }
 
 
 // States
 // ------
 // Primary
-.bacon-primary {
-  @include make-bacon($bg: $bacon-primary-bg, $border: $bacon-primary-border, $text: $bacon-primary-text);
+.badge-primary {
+  @include make-badge($bg: $badge-primary, $bg-inverse: $badge-primary-bg, $border-inverse: $badge-primary-border, $text-inverse: $badge-primary-text);
 }
 
 // Secondary
-.bacon-secondary {
-  @include make-bacon($bg: $bacon-secondary-bg, $border: $bacon-secondary-border, $text: $bacon-secondary-text);
+.badge-secondary {
+  @include make-badge($bg: $badge-secondary, $bg-inverse: $badge-secondary-bg, $border-inverse: $badge-secondary-border, $text-inverse: $badge-secondary-text);
 }
 
 // Error
-.bacon-error {
-  @include make-bacon($bg: $bacon-error-bg, $border: $bacon-error-border, $text: $bacon-error-text);
+.badge-error {
+  @include make-badge($bg: $badge-error, $bg-inverse: $badge-error-bg, $border-inverse: $badge-error-border, $text-inverse: $badge-error-text);
 }
 
 // Warning
-.bacon-warning {
-  @include make-bacon($bg: $bacon-warning-bg, $border: $bacon-warning-border, $text: $bacon-warning-text);
+.badge-warning {
+  @include make-badge($bg: $badge-warning, $bg-inverse: $badge-warning-bg, $border-inverse: $badge-warning-border, $text-inverse: $badge-warning-text);
 }
 
 // Success
-.bacon-success {
-  @include make-bacon($bg: $bacon-success-bg, $border: $bacon-success-border, $text: $bacon-success-text);
+.badge-success {
+  @include make-badge($bg: $badge-success, $bg-inverse: $badge-success-bg, $border-inverse: $badge-success-border, $text-inverse: $badge-success-text);
 }
 
 // Info
-.bacon-info {
-  @include make-bacon($bg: $bacon-info-bg, $border: $bacon-info-border, $text: $bacon-info-text);
+.badge-info {
+  @include make-badge($bg: $badge-info, $bg-inverse: $badge-info-bg, $border-inverse: $badge-info-border, $text-inverse: $badge-info-text);
 }

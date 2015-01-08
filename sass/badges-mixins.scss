@@ -1,8 +1,26 @@
 // Please try to maintain the same code style as outlined here:
 // https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
 
-@mixin make-bacon($bg, $border, $text) {
-  background-color: $bg;
+@mixin make-badge-core($bg: null, $border: null, $text: null) {
+  @if $text == null {
+    $text: #fff;
+  }
+  @if $border == null {
+    $border: darken($bg, 5%);
+  }
+  @if $bg     { background-color: $bg; }
   border-color: $border;
   color: $text;
+}
+
+@mixin make-badge($bg:null, $border: null, $text: null, $bg-inverse: null, $border-inverse: null, $text-inverse: null) {
+  @include make-badge-core($bg, $border, $text);
+
+  @if $badge-include-inverse == true {
+    @if $bg-inverse or $border-inverse or $text-inverse {
+      &.inverse {
+        @include make-badge-core($bg-inverse, $border-inverse, $text-inverse);
+      }
+    }
+  }
 }

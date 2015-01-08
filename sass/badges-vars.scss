@@ -2,44 +2,52 @@
 // https://github.com/lintelio/lintel/blob/master/CONTRIBUTING.md
 
 // Global
-$bacon-padding-y:         $cushion-y-md !default;
-$bacon-padding-x:         $cushion-x-md !default;
+$badge-include-inverse:   true;
 
-$bacon-margin-y:          $cushion-y-lg !default;
+$badge-padding-y:         0.3em !default;
+$badge-padding-x:         0.5em !default;
+$badge-padding-x-lg:      0.8em !default;
 
-$bacon-border-radius:     $border-radius-base !default;
+$badge-border-radius:     $border-radius-base !default;
+$badge-font-size:         $font-size-xs !default;
 
 // Base
-$bacon-base-bg:           $bg-light !default;
-$bacon-base-border:       $border-base !default;
-$bacon-base-text:         $text-base !default;
+$badge-base-bg:           $bg-light !default;
+$badge-base-border:       $border-base !default;
+$badge-base-text:         $text-base !default;
 
 // Primary
-$bacon-primary-bg:        $state-primary-bg !default;
-$bacon-primary-border:    $state-primary-border !default;
-$bacon-primary-text:      $state-primary-text !default;
+$badge-primary:           $state-primary;
+$badge-primary-bg:        $state-primary-bg !default;
+$badge-primary-border:    $state-primary-border !default;
+$badge-primary-text:      $state-primary-text !default;
 
 // Secondary
-$bacon-secondary-bg:      $state-secondary-bg !default;
-$bacon-secondary-border:  $state-secondary-border !default;
-$bacon-secondary-text:    $state-secondary-text !default;
+$badge-secondary:         $state-secondary;
+$badge-secondary-bg:      $state-secondary-bg !default;
+$badge-secondary-border:  $state-secondary-border !default;
+$badge-secondary-text:    $state-secondary-text !default;
 
 // Error
-$bacon-error-bg:          $state-error-bg !default;
-$bacon-error-border:      $state-error-border !default;
-$bacon-error-text:        $state-error-text !default;
+$badge-error:             $state-error;
+$badge-error-bg:          $state-error-bg !default;
+$badge-error-border:      $state-error-border !default;
+$badge-error-text:        $state-error-text !default;
 
 // Warning
-$bacon-warning-bg:        $state-warning-bg !default;
-$bacon-warning-border:    $state-warning-border !default;
-$bacon-warning-text:      $state-warning-text !default;
+$badge-warning:           $state-warning;
+$badge-warning-bg:        $state-warning-bg !default;
+$badge-warning-border:    $state-warning-border !default;
+$badge-warning-text:      $state-warning-text !default;
 
 // Success
-$bacon-success-bg:        $state-success-bg !default;
-$bacon-success-border:    $state-success-border !default;
-$bacon-success-text:      $state-success-text !default;
+$badge-success:           $state-success;
+$badge-success-bg:        $state-success-bg !default;
+$badge-success-border:    $state-success-border !default;
+$badge-success-text:      $state-success-text !default;
 
 // Info
-$bacon-info-bg:           $state-info-bg !default;
-$bacon-info-border:       $state-info-border !default;
-$bacon-info-text:         $state-info-text !default;
+$badge-info:              $state-info;
+$badge-info-bg:           $state-info-bg !default;
+$badge-info-border:       $state-info-border !default;
+$badge-info-text:         $state-info-text !default;
