@@ -1,0 +1,31 @@
+{
+  "name": "lintel-contrib-badges",
+  "version": "0.1.0",
+  "description": "Badges for lintel.",
+  "homepage": "https://github.com/lintelio/lintel-contrib-badges",
+  "repository": "https://github.com/lintelio/lintel-contrib-badges.git",
+  "keywords": [
+    "lintelmodule",
+    "lintel"
+  ],
+  "main": [
+    "sass/badges.sass",
+    "dist/badges.min.css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "lintel": "~0.1.0"
+  },
+  "devDependencies": {},
+  "ignore": [
+    "/.*",
+    "sass/lintel-core-loader.scss"
+  ],
+  "authors": [
+    {
+      "name": "Marius Craciunoiu",
+      "email": "",
+      "url": "mariusc23.com"
+    }
+  ]
+}
