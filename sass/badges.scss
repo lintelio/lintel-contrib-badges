@@ -29,6 +29,17 @@
   padding-right: $badge-padding-x-lg;
 }
 
+// Sizes
+.badge-sm {
+  font-size: $badge-font-size-sm;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-lg {
+  font-size: $badge-font-size-lg;
+}
+
 
 // States
 // ------

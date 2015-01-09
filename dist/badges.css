@@ -15,6 +15,14 @@
   padding-left: 0.8em;
   padding-right: 0.8em; }
 
+.badge-sm {
+  font-size: 0.6em;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.badge-lg {
+  font-size: 114.2857142857%; }
+
 .badge-primary {
   background-color: #4b77be;
   border-color: #406bb0;
