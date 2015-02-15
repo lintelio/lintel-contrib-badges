@@ -1,6 +1,6 @@
 {
   "name": "lintel-contrib-badges",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Badges for lintel.",
   "homepage": "https://github.com/lintelio/lintel-contrib-badges",
   "repository": "https://github.com/lintelio/lintel-contrib-badges.git",
@@ -9,7 +9,7 @@
     "lintel"
   ],
   "main": [
-    "sass/badges.sass",
+    "sass/badges.scss",
     "dist/badges.min.css"
   ],
   "license": "MIT",
